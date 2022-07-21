@@ -1,0 +1,22 @@
+CREATE TABLE runningshoes (id INTEGER PRIMARY KEY, brand TEXT, color TEXT, quantity INTEGER, price INTEGER, size INTEGER);
+
+INSERT INTO runningshoes VALUES (1, "nike", "white", 10, 50, 10);
+INSERT INTO runningshoes VALUES (2, "adidas", "blue", 7, 65, 11);
+INSERT INTO runningshoes VALUES (3, "brooks", "pink", 11, 55, 9);
+INSERT INTO runningshoes VALUES (4, "patito", "red", 10, 35, 8);
+INSERT INTO runningshoes VALUES (5, "newton", "yellow", 3, 100, 11);
+INSERT INTO runningshoes VALUES (6, "asics", "gray", 16, 70, 11.5);
+INSERT INTO runningshoes VALUES (7, "power", "white-red", 15, 90, 9);
+INSERT INTO runningshoes VALUES (8, "underarmour", "black", 13, 55, 10);
+INSERT INTO runningshoes VALUES (9, "reebok", "blue", 34, 70, 10);
+INSERT INTO runningshoes VALUES (10, "altra", "black", 20, 55, 9.5);
+INSERT INTO runningshoes VALUES (11, "newbalance", "gray", 23, 100, 10);
+INSERT INTO runningshoes VALUES (12, "mizuno", "orange", 10, 55, 9.5);
+INSERT INTO runningshoes VALUES (13, "altra", "black", 16, 80, 10);
+INSERT INTO runningshoes VALUES (14, "hoka", "black", 22, 85, 11);
+INSERT INTO runningshoes VALUES (15, "saucony", "orange", 10, 98, 10);
+
+SELECT * FROM runningshoes WHERE price > 80 ORDER BY price;
+
+SELECT * FROM runningshoes ORDER BY color
+
