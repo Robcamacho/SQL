@@ -16,7 +16,9 @@ INSERT INTO runningshoes VALUES (13, "altra", "black", 16, 80, 10);
 INSERT INTO runningshoes VALUES (14, "hoka", "black", 22, 85, 11);
 INSERT INTO runningshoes VALUES (15, "saucony", "orange", 10, 98, 10);
 
+--display the database ordered by price
 SELECT * FROM runningshoes WHERE price > 80 ORDER BY price;
 
+--display the database ordered by color
 SELECT * FROM runningshoes ORDER BY color
 
