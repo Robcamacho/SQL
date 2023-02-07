@@ -27,3 +27,28 @@ time_signature integer NOT NULL
 #Then I inserted the Spotify Data .csv into the table.
 
 #Next, I explored the data using the following SQL. 
+
+#First I determined the artist name and popularity ordered by the first 10 popular.
+select 
+artist_name,
+popularity
+from BIT_DB.Spotifydata
+order by (popularity)asc limit 10
+
+#Then I determined the artist name ordered alphabetical order without duplicates.
+select
+distinct
+artist_name  
+from 
+BIT_DB.Spotifydata
+order by artist_name asc
+
+#Also I determined the twenty danceable tracks with their artist.
+select
+artist_name,
+track_name,
+danceability
+ from 
+BIT_DB.Spotifydata
+order by danceability desc
+limit 20
